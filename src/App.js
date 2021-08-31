@@ -10,7 +10,9 @@ import EditMovie from './pages/EditMovie';
 function App() {
   return (
     <Router>
-      <div>Movie Card Library CRUD</div>
+      <header className="movie-card-header ">
+      <h1 className="page-title">Movie Card Library CRUD</h1>
+      </header>
       <Switch>
         <Route exact path="/" component={ MovieList } />
         <Route exact path="/movies/new" component={ NewMovie } />
